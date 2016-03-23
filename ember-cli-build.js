@@ -23,11 +23,13 @@ module.exports = function(defaults) {
   app.import('vendor/js/jquery.min.js');
   app.import('vendor/js/framework.js');
   app.import('vendor/js/scripts.js');
-  app.import('vendor/js/webfont.js');
   app.import('vendor/js/modernizr.js');
   app.import('vendor/css/styles.css');
+  app.import('vendor/css/ionicons.min.css');
   app.import('vendor/css/framework.css');
   app.import('vendor/css/normalize.css');
+  app.import('vendor/fonts/ionicons.ttf');
+  app.import('vendor/fonts/ionicons.woff');
 
   return app.toTree();
 };
