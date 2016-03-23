@@ -20,5 +20,14 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  app.import('vendor/js/jquery.min.js');
+  app.import('vendor/js/framework.js');
+  app.import('vendor/js/scripts.js');
+  app.import('vendor/js/webfont.js');
+  app.import('vendor/js/modernizr.js');
+  app.import('vendor/css/styles.css');
+  app.import('vendor/css/framework.css');
+  app.import('vendor/css/normalize.css');
+
   return app.toTree();
 };
