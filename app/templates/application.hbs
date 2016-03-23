@@ -8,14 +8,12 @@
     <div class="page-content bg-gradient" id="main-stack" data-scroll="0">
       <h1 class="title-h1 text-center">Welcome to myApp</h1>
       <div class="body padding">
-        <div class="splash-logo">
-          <div class="loading-icon splash">
-            <div class="navbar-button-icon icon ion-load-d"></div>
-          </div>
-        </div>
+        <h2>Hello Eduard!</h2>
         {{outlet}}
-        <button class="action-button" type="button" name="button">Hello</button>
-        {{#link-to "loans" class="btn btn-block btn-warning" type="button"}}ahhoi{{/link-to}}
+        <div class="button-menu">
+          {{#link-to "loans" class="w-button" type="button"}}Go to loans route{{/link-to}}
+          {{#link-to "index" class="action-button" type="button"}}Go back{{/link-to}}
+        </div>
         <div class="bottom-section padding text-centered">
           <div class="separator-big"></div>
           <div class="link-upper">Built by Krigulson</div>

@@ -79,7 +79,8 @@ html.w-mod-touch * {
   color: white;
   border: 0;
   line-height: inherit;
-  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
   border-radius: 0;
 }
