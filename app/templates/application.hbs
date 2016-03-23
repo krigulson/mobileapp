@@ -3,6 +3,30 @@
     {{w-navigation}}
   </div>
 </header>
-<h1 class="title-h1 text-center">Welcome to myApp</h1>
-<button class="btn btn-warning btn-block" type="button" name="button">Hello</button>
-{{outlet}}
+<body>
+  <section class="w-section mobile-wrapper">
+    <div class="page-content bg-gradient" id="main-stack" data-scroll="0">
+      <h1 class="title-h1 text-center">Welcome to myApp</h1>
+      <div class="body padding">
+        <div class="splash-logo">
+          <div class="loading-icon splash">
+            <div class="navbar-button-icon icon ion-load-d"></div>
+          </div>
+        </div>
+        {{outlet}}
+        <button class="action-button" type="button" name="button">Hello</button>
+        {{#link-to "loans" class="btn btn-block btn-warning" type="button"}}ahhoi{{/link-to}}
+        <div class="bottom-section padding text-centered">
+          <div class="separator-big"></div>
+          <div class="link-upper">Built by Krigulson</div>
+          <div class="separator-bottom"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content loading-mask" id="new-stack">
+      <div class="loading-icon">
+        <div class="navbar-button-icon icon ion-load-d"></div>
+      </div>
+    </div>
+  </section>
+</body>
