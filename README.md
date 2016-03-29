@@ -1,28 +1,29 @@
-# mobileapp
-Ember.js with Cordova by Krigulson
+mobileapp
+=========
+###### Ember.js with Cordova by Krigulson
 
-Branch <code>master-bootstrap<code>:<br>
+### Requirements:
+1.ember-cli
+2.cordova
 
-All the same but bootstrap framework included<br>
-Branch <code>dependencies<code>:<br>
+#### After clone:
+* `ember install ember-cli-cordova`
+* `npm i && bower i`
 
-Included here:<br>
-<code>node_modules<code>
+###### After that you should get it running by hitting on command-line:
+`ember serve`
 
-<code>bower_components<code>
->Also in this branch there is all custom javascripts and stylesheets.<br>
->And more dependencies and functionality like some basic route and so on.
+Branch `master`:
+Contains only pure Ember.js and Cordova no dependencies.
 
-<pre>pull this branch and you no need to do _after_clone_ part</pre>
+Branch `master-bootstrap`:
+* Added bootstrap
+If you no need any other dependencies or some custom routes or design then start from this branch.
 
-Requirements:<br>
-<code>ember-cli</code><br>
-<code>cordova</code>
+Branch `dependencies`:
 
-After clone:
-<pre>ember install ember-cli-cordova</pre>
-and:
-<pre>npm i && bower i</pre>
-
-After that you should get it running by hitting on command-line:
-<pre>ember serve</pre>
+#### Included here:
+* node_modules
+* bower_components
+> * Also in this branch there is all custom javascripts and stylesheets.
+> * And more dependencies and functionality like some basic route and so on.
