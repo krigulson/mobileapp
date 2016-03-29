@@ -6,23 +6,22 @@ Branch <code>master-bootstrap<code>:<br>
 All the same but bootstrap framework included<br>
 Branch <code>dependencies<code>:<br>
 
-Included here:<br>
-<code>node_modules<code>
-
-<code>bower_components<code>
+<h4>Included here:</h4><br>
+1.node_modules
+2.bower_components
 >Also in this branch there is all custom javascripts and stylesheets.<br>
 >And more dependencies and functionality like some basic route and so on.
 
-<pre>pull this branch and you no need to do _after_clone_ part</pre>
+<h3>pull this branch and you no need to do after clone part</h3>
 
-Requirements:<br>
-<code>ember-cli</code><br>
-<code>cordova</code>
+<h4>Requirements:</h4><br>
+ember-cli<br>
+cordova
 
-After clone:
-<pre>ember install ember-cli-cordova</pre>
+<h4>After clone:</h4>
+ember install ember-cli-cordova
 and:
-<pre>npm i && bower i</pre>
+npm i && bower i
 
-After that you should get it running by hitting on command-line:
-<pre>ember serve</pre>
+<h3>After that you should get it running by hitting on command-line:</h3>
+ember serve

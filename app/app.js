@@ -13,6 +13,14 @@ App = Ember.Application.extend({
   Resolver
 });
 
+Ember.Route.reopen({
+  hasLayout: true,            // true by default since most views need layout
+  setupController() {
+    this._super();
+    this.controllerFor('application').set('showLayout', this.get('hasLayout'));
+  }
+});
+
 loadInitializers(App, config.modulePrefix);
 
 export default App;

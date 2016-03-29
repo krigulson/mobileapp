@@ -1,0 +1,31 @@
+<section class="w-section mobile-wrapper">
+  <div class="page-content bg-gradient" id="main-stack" data-scroll="0">
+    <div class="w-nav navbar transparent" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+      <div class="w-container">
+        <div class="wrapper-mask" data-ix="menu-mask"></div>
+        <div class="navbar-title">Forgot Password</div>
+        {{#link-to "index" class="w-inline-block navbar-button"}}
+          <div class="navbar-button-icon icon ion-ios-close-empty"></div>
+        {{/link-to}}
+      </div>
+    </div>
+    <div class="body padding">
+      <div class="logo-login bigger"></div>
+      <!-- Here should be a logo, if you need it then change position to absolute in forgot.less file -->
+      <div class="bottom-section padding">
+        <div class="w-form">
+          <form id="submit-form" name="email-form" action="#">
+            <div>
+              <label class="label-form" for="email-field">EMAIL</label>
+              <input class="w-input input-form light" id="email-field" type="email" name="email" data-name="email" required="required">
+              <div class="separator-button"></div>
+            </div>
+            <input class="w-button action-button" type="submit" value="Remember me" data-wait="Please wait...">
+            <div class="separator-button"></div><a class="link-upper" href="signup.html" data-load="1">Don't have an account? <strong class="b-link">Sign up</strong></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- There was loading icon, render it here if you need it -->
+</section>

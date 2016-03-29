@@ -1,30 +1,21 @@
+{{#if showLayout}}
 <header>
   <div class="w-navigation">
     {{w-navigation}}
   </div>
 </header>
 <body>
-  <section class="w-section mobile-wrapper">
-    <div class="page-content bg-gradient" id="main-stack" data-scroll="0">
-      <h1 class="title-h1 text-center">Welcome to myApp</h1>
-      <div class="body padding">
-        <h2>Hello Eduard!</h2>
-        {{outlet}}
-        <div class="button-menu">
-          {{#link-to "loans" class="w-button" type="button"}}Go to loans route{{/link-to}}
-          {{#link-to "index" class="action-button" type="button"}}Go back{{/link-to}}
-        </div>
-        <div class="bottom-section padding text-centered">
-          <div class="separator-big"></div>
-          <div class="link-upper">Built by Krigulson</div>
-          <div class="separator-bottom"></div>
-        </div>
+  <div class="page-content bg-gradient" id="main-stack" data-scroll="0">
+    <div class="body padding bg-gradient">
+      {{outlet}}
+      <div class="bottom-section padding text-centered">
+        <div class="separator-big"></div>
+        <div class="link-upper">Built by Krigulson</div>
+        <div class="separator-bottom"></div>
       </div>
     </div>
-    <div class="page-content loading-mask" id="new-stack">
-      <div class="loading-icon">
-        <div class="navbar-button-icon icon ion-load-d"></div>
-      </div>
-    </div>
-  </section>
+  </div>
 </body>
+{{else}}
+  {{outlet}}
+{{/if}}
